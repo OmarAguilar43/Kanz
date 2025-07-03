@@ -1,27 +1,25 @@
 'use client'
 
-import Link from 'next/link'
+type navBarProps = {
+  texto: string;
+  fn: () => void;
+}
 
-export function Navbar() {
+export function Navbar({ texto, fn }: navBarProps) {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-transparent text-white">
-      <nav className="max-w-screen-xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold">KANZ</div>
-        <ul className="flex gap-6 text-sm md:text-base">
+    <header className="sticky top-0 left-0 w-full h-20 py-3 box-content z-1 bg-transparent text-white">
+      <nav className="flex w-full h-full justify-center items-center bg-blue-500lolo">
+        <div className="w-15/100 h-full hidden lg:block bg-orange-500lolo"></div>
+        <div className="flex justify-start lg:justify-center w-70/100 max-md:w-35/100 h-full py-2 max-lg:pl-10 bg-green-500lolo">
+          <img src="/logo-blanco.png" alt="LogoKanzBlanco" 
+            className="h-full"
+          />
+        </div>
+        <ul className="flex justify-center max-lg:justify-end items-center text-sm md:text-base w-30/100 max-md:w-65/100 max-lg:pr-10 lg:w-15/100 h-full bg-pink-500lolo">
           <li>
-            <Link href="#hero" className="hover:underline">
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link href="#info" className="hover:underline">
-              Producto
-            </Link>
-          </li>
-          <li>
-            <Link href="#vision" className="hover:underline">
-              Visión
-            </Link>
+            <button onClick={fn} className="p-5 bg-red-500lolo">
+              {texto}
+            </button>
           </li>
         </ul>
       </nav>
