@@ -10,16 +10,16 @@ export default  function productPage() {
 
 
   return (
-    <div className="mt-15 mb-20 grid grid-cols-1  md:grid-cols-3 gap-3">
+    <div className="mt-15 mb-20 grid grid-cols-1 bg-black md:grid-cols-3 gap-2">
 
       {/* {Slideshow} */}
-      <div className="col-span-1 md:col-span-2 ">
+      <div className="col-span-1 ml-40 md:col-span-2 ">
         <ProductSlide/>
       </div>
 
       {/* {detalles} */}
 
-      <div className="col-span-1 px-5 mt-40 ">
+      <div className="col-span-1 px-10  mt-40 ">
         <h1 style={{ fontFamily: 'Panchang-Bold' }} 
              className="font-bold text-4xl antialiased">KANZ  KROPPED T-SHIRT V2</h1>
         <p style={{ fontFamily: 'Panchang-Medium' }}className="text-sm mb-5 mt-5">$ 799 MXN</p>
