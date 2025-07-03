@@ -14,7 +14,8 @@ export const ProductSlide = () => {
   return (
     <>
       {/* Carrusel principal */}
-      <Swiper
+      <div className='items-center'>
+        <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
@@ -38,12 +39,14 @@ export const ProductSlide = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
+      
 
       {/* Carrusel de miniaturas */}
-      <div className="mt-2 w-full md:w-[600px] px-4">
+      <div className="mt-4 w-full md:w-[600px]  items-center ml-35  ">
         <Swiper
           onSwiper={setThumbsSwiper}
-          spaceBetween={7}
+          spaceBetween={6}
           slidesPerView={3}
           freeMode={true}
           watchSlidesProgress={true}
@@ -57,7 +60,7 @@ export const ProductSlide = () => {
                   src={src}
                   alt={`Miniatura ${index + 1}`}
                   fill
-                  className="object-contain rounded-md"
+                  className="object-contain "
                 />
               </div>
             </SwiperSlide>
