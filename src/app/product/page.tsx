@@ -20,8 +20,9 @@ export default  function productPage() {
       {/* {detalles} */}
 
       <div className="col-span-1 px-5 mt-40 ">
-        <h1 className="font-bold text-4xl antialiased">KANZ  KROPPED T-SHIRT V2</h1>
-        <p className="text-sm mb-5 mt-5">$ 799 MXN</p>
+        <h1 style={{ fontFamily: 'Panchang-Bold' }} 
+             className="font-bold text-4xl antialiased">KANZ  KROPPED T-SHIRT V2</h1>
+        <p style={{ fontFamily: 'Panchang-Medium' }}className="text-sm mb-5 mt-5">$ 799 MXN</p>
       
 
       
@@ -29,14 +30,17 @@ export default  function productPage() {
 
         <div className="grid grid-cols-2 gap-4 ">
 
-          <button className="border-2 py-2 text-xs hover:bg-slate-900">DETALLES</button>
-          <button className="border-2 text-xs hover:bg-slate-900">TALLAS</button>
+          <button style={{ fontFamily: 'Panchang-Bold' }} 
+                  className="border-2 py-2 text-xs hover:bg-slate-900">DETALLES</button>
+
+          <button style={{ fontFamily: 'Panchang-Bold' }}
+                  className="border-2 text-xs hover:bg-slate-900">TALLAS</button>
 
         </div>
 
         {/* {boton} */}
 
-        <button className="my-5 bg-black
+        <button style={{ fontFamily: 'Panchang-Medium' }} className="my-5 bg-black
         hover:bg-slate-900 text-white py-4 w-full rounded transition-all border-2">
         Ordenar
         </button>
