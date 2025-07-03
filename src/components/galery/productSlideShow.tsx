@@ -8,7 +8,7 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
 import Image from 'next/image'
 
 export const ProductSlide = () => {
-  const images = ['/shirtNew.png', '/shirt_back.PNG', '/body.png']
+  const images = ['/espalda.jpg', '/frente.jpg']
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null)
 
   return (

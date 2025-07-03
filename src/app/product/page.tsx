@@ -19,23 +19,34 @@ export default  function productPage() {
 
       {/* {detalles} */}
 
-      <div className="col-span-1 px-5 ">
-        <h1 className="font-bold text-2xl antialiased">Ola 2</h1>
-        <p className="text-lg mb-5">$75</p>
+      <div className="col-span-1 px-5 mt-40 ">
+        <h1 className="font-bold text-4xl antialiased">KANZ  KROPPED T-SHIRT V2</h1>
+        <p className="text-sm mb-5 mt-5">$ 799 MXN</p>
       
 
-      {/* {boton} */}
+      
+        {/* {second buttons} */}
 
-      <button className="my-5 bg-blue-600 
-        hover:bg-blue-800 text-white py-2 px-4 rounded transition-all">
+        <div className="grid grid-cols-2 gap-4 ">
+
+          <button className="border-2 py-2 text-xs hover:bg-slate-900">DETALLES</button>
+          <button className="border-2 text-xs hover:bg-slate-900">TALLAS</button>
+
+        </div>
+
+        {/* {boton} */}
+
+        <button className="my-5 bg-black
+        hover:bg-slate-900 text-white py-4 w-full rounded transition-all border-2">
         Ordenar
-      </button>
+        </button>
 
-      {/* {descripcion} */}
-      <h3 className="font-bold text-sm">Description</h3>
-      <p className="font-light">mucho texto </p>
 
-    </div>
+       {/* {descripcion} */}
+        <h3 className="font-bold text-sm">Description</h3>
+        <p className="font-light">mucho texto </p>
+
+      </div>
     </div>
 
   )
