@@ -9,7 +9,7 @@ export default function productPage() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/shop");
+    router.push("/product");
   }
 
   return (

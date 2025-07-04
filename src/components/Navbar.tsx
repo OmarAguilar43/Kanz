@@ -17,7 +17,7 @@ export function Navbar({ texto, fn }: navBarProps) {
         </div>
         <ul className="flex justify-center max-lg:justify-end items-center text-sm md:text-base w-30/100 max-md:w-65/100 max-lg:pr-10 lg:w-15/100 h-full bg-pink-500lolo">
           <li>
-            <button onClick={fn} className="p-5 bg-red-500lolo">
+            <button onClick={fn} className="p-5 bg-red-500lolo hover:text-slate-600 cursor-pointer transition delay-50 duration-300 ease-in-out">
               {texto}
             </button>
           </li>

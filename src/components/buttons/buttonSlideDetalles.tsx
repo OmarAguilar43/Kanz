@@ -10,7 +10,7 @@ export function ButtonSlideDetalles () {
       {({ open }) => (
         <>
           <DisclosureButton style={{ fontFamily: 'Panchang-Bold' }} 
-           className="w-full border-b pb-2 text-left hover:text-slate-600">DETALLES</DisclosureButton>
+           className="w-full border-b pb-2 text-left hover:text-slate-600 cursor-pointer transition delay-50 duration-300 ease-in-out">DETALLES</DisclosureButton>
           <div className="overflow-hidden py-2">
             <AnimatePresence>
               {open && (
