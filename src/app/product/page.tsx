@@ -1,16 +1,22 @@
 'use client'
 
-import { ProductSlide } from "@/src/components/galery/productSlideShow"
+//import { ProductSlide } from "@/src/components/galery/productSlideShow"
 import { ButtonSlideTallas } from '../../components/buttons/buttonSlideTallas';
 import { ButtonSlideDetalles } from "@/src/components/buttons/buttonSlideDetalles";
 import { Navbar } from "@/src/components/Navbar";
 import { useRouter } from 'next/navigation'
+import EmblaCarousel from "@/src/components/newGalery/EmblaCarousel";
+
 
 
 
 
 
 export default  function productPage() {
+
+  const slides = ['/KANZ V2 ESPALDA.jpg','/KANZ V2 FRENTE.jpg','/1.jpg', '/2.jpg', '/3.jpg', '/4.jpg', '/5.jpg'];
+  
+
   const router = useRouter();
 
   const handleClick = () => {
@@ -25,17 +31,25 @@ export default  function productPage() {
       />
 
       
-    <div className="mt-15 mb-20 grid grid-cols-1 bg-black  md:grid-cols-3 gap-2">
+    <div className="mt-2 mb-20 grid grid-cols-1 bg-black md:grid-cols-2 gap-2">
       {/* {Slideshow} */}
-      <div className="col-span-1 md:col-span-2 ">
-        <ProductSlide/>
+      <div className="col-span-1 w-full max-w-[800px] md:col-span-1 ">
+   
+         <EmblaCarousel slides={slides} />
+        
       </div>
 
       {/* {detalles} */}
 
       
 
-      <div className="col-span-1 px-10 mt-20 items-center sm:mt-5 md:mt-5">
+      {/* <div className="col-span-1 px-10 mt-20 items-center sm:mt-5 md:mt-5"> */}
+
+      <div className="col-span-1 px-10 flex items-center justify-center max-w-[500px] mx-auto">
+
+        <div className="flex flex-col justify-center">
+    {/* TODO: tu contenido aquí */}
+            
 
         <h1
           style={{ fontFamily: 'Panchang-Bold' }}
@@ -71,18 +85,18 @@ export default  function productPage() {
 
         </div>
 
-          
-       
-
-       
-
        {/* {descripcion} */}
         <h3 className="font-bold text-sm">Description</h3>
         <p className="font-light">mucho texto </p>
 
       </div>
     </div>
+
+
+          </div>
     </div>
+
+    
 
   )
 }
