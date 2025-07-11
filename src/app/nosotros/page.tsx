@@ -9,11 +9,11 @@ export default function productPage() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push("/product");
+    router.push("/comprar");
   }
 
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="bg-black flex flex-col w-screen h-screen">
       <Navbar 
         texto = "COMPRAR"
         fn = {handleClick}

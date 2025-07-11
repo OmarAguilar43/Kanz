@@ -10,7 +10,7 @@ export default function SplashPage() {
   const router = useRouter();
 
   const handleClickProduct = () => {
-    router.push('/product')
+    router.push('/comprar')
   }
 
   const handleClickAboutUs = () => {
@@ -24,13 +24,14 @@ export default function SplashPage() {
         <img
             src="/logo-plata.png" // o logo.png si es PNG
             alt="Dalloway Logo"
-            className="h-50/100 sm:h-70/100 bg-green-500lolo"
+            className="h-50/100 lg:h-70/100 bg-green-500lolo"
           />
-        <div className="flex flex-row gap-x-5 justify-center items-center w-55/100 mt-5 bg-blacklolo">
-          <button  onClick={handleClickProduct} className="border-2 w-50/100  p-2 lg:text-base text-xs hover:bg-slate-900 bg-green-500lolo">
+        <div className="flex flex-row gap-x-5 justify-center items-center w-55/100 max-xl:w-70/100 max-sm:w-90/100 mt-5 bg-green-500lolo">
+          <button style={{ fontFamily: "Panchang-Medium" }} onClick={handleClickProduct} className="w-50/100 p-2 2xl:text-xl xl:text-lg lg:text-base md:text-sm text-xs hover:bg-slate-900 border-1 border-white cursor-pointer transition delay-50 duration-300 ease-in-out bg-green-500lolo">
             COMPRAR
           </button>
-          <button onClick={handleClickAboutUs} className="border-2 w-50/100  p-2 lg:text-base text-xs hover:bg-slate-900 bg-green-500lolo">
+
+          <button style={{ fontFamily: "Panchang-Medium" }} onClick={handleClickAboutUs} className="w-50/100 p-2 2xl:text-xl xl:text-lg lg:text-base md:text-sm text-xs hover:bg-slate-900 border-1 border-white cursor-pointer transition delay-50 duration-300 ease-in-out bg-green-500lolo">
             NOSOTROS
           </button>
         </div>
