@@ -18,8 +18,8 @@ export const Thumb: React.FC<ThumbProps> = ({ image, selected, onClick }) => {
       <Image
         src={image}
         alt="Thumbnail"
-        width={80}
-        height={80}
+        width={100}
+        height={100}
         className="w-full h-full object-cover"
       />
     </button>

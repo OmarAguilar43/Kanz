@@ -6,16 +6,18 @@ import { ButtonSlideDetalles } from "@/src/components/buttons/buttonSlideDetalle
 import { Navbar } from "@/src/components/Navbar";
 import { useRouter } from "next/navigation";
 import EmblaCarousel from "@/src/components/newGalery/EmblaCarousel";
+import SecondGalery from "@/src/components/galeriaSecundaria/secondGalery";
+import { Footer } from "@/src/components/footer";
 
-export default function productPage() {
+
+export default function ProductPage() {
   const slides = [
-    "/KANZ V2 ESPALDA.jpg",
-    "/KANZ V2 FRENTE.jpg",
-    "/1.jpg",
-    "/2.jpg",
-    "/3.jpg",
-    "/4.jpg",
-    "/5.jpg",
+    "/1er carrusel foto 1.jpg",
+    "/1er carrusel foto 2.jpg",
+    "/1er carrusel foto 3.jpg",
+    "/1er carrusel foto 4.jpg",
+ 
+ 
   ];
 
   const router = useRouter();
@@ -89,6 +91,10 @@ export default function productPage() {
           </div>
         </div>
       </div>
+                  <p className="font-bold flex justify-center mb-5">Talla de los modelos  </p>
+                  <SecondGalery/>
+                  <Footer/>
+
     </div>
   );
 }

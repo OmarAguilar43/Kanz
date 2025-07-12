@@ -2,6 +2,7 @@
 
 'use client'
 
+import Image from 'next/image';
 import { useRouter } from 'next/navigation'
 
 
@@ -21,9 +22,11 @@ export default function SplashPage() {
     <div className="flex flex-row justify-start items-end h-screen w-screen sm:bg-[url(/banner-escritorio.jpg)]  bg-[url(/banner-movil.jpg)] bg-no-repeat bg-cover bg-center">
       {/*añadir  arriba*/}
       <div className="flex flex-col justify-center items-center h-full w-full sm:w-60/100 bg-red-500lolo">
-        <img
+        <Image
             src="/logo-plata.png" // o logo.png si es PNG
             alt="Dalloway Logo"
+            height={550}
+            width={550}
             className="h-50/100 lg:h-70/100 bg-green-500lolo"
           />
         <div className="flex flex-row gap-x-5 justify-center items-center w-55/100 max-xl:w-70/100 max-sm:w-90/100 mt-5 bg-green-500lolo">

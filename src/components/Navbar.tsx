@@ -1,5 +1,8 @@
 'use client'
 
+import Image from "next/image";
+import Link from "next/link";
+
 type navBarProps = {
   texto: string;
   fn: () => void;
@@ -11,9 +14,18 @@ export function Navbar({ texto, fn }: navBarProps) {
       <nav className="flex w-full h-full justify-center items-center bg-blue-500lolo">
         <div className="w-15/100 h-full hidden lg:block bg-orange-500lolo"></div>
         <div className="flex justify-start lg:justify-center w-70/100 max-md:w-35/100 h-full py-2 max-lg:pl-10 bg-green-500lolo">
-          <img src="/logo-blanco.png" alt="LogoKanzBlanco" 
-            className="h-full"
+        <Link href={"/"}>
+
+          <Image 
+          src="/logo-blanco.png" 
+          alt="LogoKanzBlanco" 
+          width={70}
+          height={70}
+          className="h-full"
           />
+
+        </Link>
+          
         </div>
         <ul className="flex justify-center max-lg:justify-end items-center text-sm md:text-base w-30/100 max-md:w-65/100 max-lg:pr-10 lg:w-15/100 h-full bg-pink-500lolo">
           <li>

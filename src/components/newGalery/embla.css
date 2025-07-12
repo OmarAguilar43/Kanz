@@ -1,7 +1,7 @@
 .embla {
-  max-width: 22rem;
+  max-width: 45rem;
   margin: auto;
-  --slide-height: 19rem;
+  --slide-height: 30rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
@@ -18,6 +18,7 @@
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
+  height: var(--slide-height);
 }
 .embla__slide__number {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
@@ -31,8 +32,8 @@
   user-select: none;
 }
 .embla-thumbs {
-  --thumbs-slide-spacing: 0.8rem;
-  --thumbs-slide-height: 6rem;
+  --thumbs-slide-spacing: 0.7rem;
+  --thumbs-slide-height: 8rem;
   margin-top: var(--thumbs-slide-spacing);
 }
 .embla-thumbs__viewport {
