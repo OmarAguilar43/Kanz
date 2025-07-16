@@ -5,32 +5,51 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/zoom'
 
 import './styles.css';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination, Zoom } from 'swiper/modules';
 import Image from 'next/image';
 
 export default function SecondGalery() {
 
-      const images = ['/8.jpg', '/17.jpg','/1.jpg','/19.jpg','/13.jpg']
+      const images = [
+        '/2Carrusel/2do Carrusel foto 1.jpg',
+        '/2Carrusel/2do Carrusel foto 2.jpg',
+        '/2Carrusel/2do Carrusel foto 3.jpg',
+        '/2Carrusel/2do Carrusel foto 4.jpg',
+        '/2Carrusel/2do Carrusel foto 5.jpg',
+        '/2Carrusel/2do Carrusel foto 6.jpg',
+        '/2Carrusel/2do Carrusel foto 7.jpg',
+        '/2Carrusel/2do Carrusel foto 8.jpg',
+        '/2Carrusel/2do Carrusel foto 9.jpg',
+        '/2Carrusel/2do Carrusel foto 10.jpg',
+        '/2Carrusel/2do Carrusel foto 11.jpg',
+        '/2Carrusel/2do Carrusel foto 12.jpg',
+        '/2Carrusel/2do Carrusel foto 13.jpg',
+        '/2Carrusel/2do Carrusel foto 14.jpg',
+        '/2Carrusel/2do Carrusel foto 15.jpg',
+      ]
+        
 
   return (
     <>
       <Swiper
-        slidesPerView={'auto'}
+        slidesPerView={1.2}
         centeredSlides={true}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[Zoom,Pagination]}
+        zoom={true}
         className="mySwiper"
       >
                 {images.map((src, index) => (
                   <SwiperSlide key={index}>
-                    <div >
+                    <div className='swiper-zoom-container'>
                       <Image
                         src={src}
                         alt={`Imagen ${index + 1}`}

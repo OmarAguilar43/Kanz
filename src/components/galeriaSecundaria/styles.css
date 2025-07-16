@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  background: #000;
+  background: #000000;
   font-family:
     Helvetica Neue,
     Helvetica,
@@ -22,14 +22,14 @@ body {
 }
 
 .swiper {
-  width: 70%;
+  width: 80%;
   height: 80%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #444;
+  background: #000000;
 
   /* Center slide text vertically */
   display: flex;
@@ -39,19 +39,21 @@ body {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
 }
 
 .swiper-slide {
-  width: 60%;
+  width: 50%;
 }
 
-.swiper-slide:nth-child(2n) {
-  width: 45%;
+/* .swiper-slide:nth-child(2n) {
+  width: 50%;
 }
 
 .swiper-slide:nth-child(3n) {
-  width: 30%;
-}
+  width: 40%;
+} */
