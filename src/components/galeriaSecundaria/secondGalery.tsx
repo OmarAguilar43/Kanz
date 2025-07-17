@@ -42,15 +42,15 @@ export default function SecondGalery() {
         }}
         modules={[Zoom, Pagination]}
         zoom={true}
-        className="mySwiper w-full xl:h-83/100 md:h-65/100 h-35/100"
+        className="mySwiper w-full xl:h-83/100 md:h-75/100 sm:h-50/100 h-60/100 "
       >
         {images.map((src, idx) => (
           <SwiperSlide
             key={idx}
             className={
               idx === 0 || idx === 6
-                ? "h-full w-90/100! lg:w-61/100!"
-                : "h-full w-40/100! lg:w-28/100!"
+                ? "h-full w-230/100! sm:w-200/100! lg:w-95/100! md:w-135/100! xl:w-80/100! 2xl:w-50/100! "
+                : "h-full w-105/100! sm:w-90/100! lg:w-43/100! md:w-63/100! xl:w-35/100! 2xl:w-20/100!"
             }
           >
             <Image src={src} alt={`Imagen ${idx + 1}`} fill />
