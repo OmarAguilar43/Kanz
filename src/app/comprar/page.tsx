@@ -91,7 +91,7 @@ export default function ProductPage() {
       <p className="font-bold flex justify-center mb-5">
         Talla de los modelos{" "}
       </p>
-      <div className="flex justify-center w-full h-full m-10">
+      <div className="flex justify-center items-center w-full h-full m-10">
         <SecondGalery />
       </div>
       <Footer />
