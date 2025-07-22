@@ -49,8 +49,8 @@ export default function SecondGalery() {
             key={idx}
             className={
               idx === 0 || idx === 6
-                ? "h-full w-230/100! sm:w-200/100! lg:w-95/100! md:w-135/100! xl:w-70/100! 2xl:w-50/100! "
-                : "h-full w-105/100! sm:w-90/100! lg:w-43/100! md:w-63/100! xl:w-35/100! 2xl:w-20/100!"
+              ? "h-full w-235/100! min-[375px]:w-200/100! min-[425px]:w-180/100! md:w-125/100! lg:w-94/100! xl:w-74/100! 2xl:w-62/100! "
+              : "h-full w-105/100!  min-[375px]:w-90/100! min-[425px]:w-77/100! md:w-55/100! lg:w-42/100! xl:w-33/100! 2xl:w-28/100!"
             }
           >
             <Image src={src} alt={`Imagen ${idx + 1}`} fill />
