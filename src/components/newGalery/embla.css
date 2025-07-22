@@ -1,10 +1,24 @@
 .embla {
   max-width: 45rem;
   margin: auto;
-  --slide-height: 30rem;
+  --slide-height: 20rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
+
+  @media (min-width: 640px) {
+  .embla {
+    --slide-height: 25rem;
+  }
+}
+
+/* pantallas grandes */
+@media (min-width: 1024px) {
+  .embla {
+    --slide-height: 30rem;
+  }
+}
+
 .embla__viewport {
   overflow: hidden;
 }
@@ -19,6 +33,7 @@
   min-width: 0;
   padding-left: var(--slide-spacing);
   height: var(--slide-height);
+  
 }
 .embla__slide__number {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);

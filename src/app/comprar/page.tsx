@@ -24,7 +24,7 @@ export default function ProductPage() {
   };
 
   return (
-    <div className="w-screen h-screen bg-black text-white">
+    <div className="w-screen h-screen overflow-x-hidden bg-black text-white">
       <Navbar texto="NOSOTROS" fn={handleClick} />
 
       <div className="w-full h-fit">

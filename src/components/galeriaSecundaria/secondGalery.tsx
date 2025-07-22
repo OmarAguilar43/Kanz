@@ -49,7 +49,7 @@ export default function SecondGalery() {
             key={idx}
             className={
               idx === 0 || idx === 6
-                ? "h-full w-230/100! sm:w-200/100! lg:w-95/100! md:w-135/100! xl:w-80/100! 2xl:w-50/100! "
+                ? "h-full w-230/100! sm:w-200/100! lg:w-95/100! md:w-135/100! xl:w-70/100! 2xl:w-50/100! "
                 : "h-full w-105/100! sm:w-90/100! lg:w-43/100! md:w-63/100! xl:w-35/100! 2xl:w-20/100!"
             }
           >
