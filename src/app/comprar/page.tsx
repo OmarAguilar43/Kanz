@@ -82,15 +82,32 @@ export default function ProductPage() {
               </div>
 
               {/* {descripcion} */}
-              <h3 className="font-bold text-sm">Description</h3>
-              <p className="font-light">mucho texto </p>
+              <h3 className="font-bold text-sm mt-5 mb-2">
+                DESCRIPCIÓN Y AJUSTE
+              </h3>
+              <p className="font-light text-wrap text-justify">
+                Camiseta cropped de corte oversize en punto grueso de algodón y
+                poliéster. Modelo de manga corta-oversize con hombros holgados y
+                cuello redondo para un ajuste cómodo. Color negro con gráficos
+                estampados en frente y espalda. Tanto tallaje como numeración se
+                encuentran bordados en la esquina inferior izquierda. La
+                numeración de la camiseta depende de la talla por su edición
+                exclusiva.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <p className="font-bold flex justify-center mb-5">
-        Talla de los modelos{" "}
-      </p>
+      <div className="w-full flex flex-col items-center gap-y-5">
+        <p className="w-70/100 font-bold text-wrap md:text-center text-justify">
+          Omar mide 170 cm y usa una talla L/G y Victoria mide 165 cm y usa una
+          talla S/CH.
+        </p>
+        <p className="w-70/100 font-bold text-wrap md:text-center text-justify">
+          El primer modelo de Kanz es orgullosamente diseñado y confeccionado en
+          México.
+        </p>
+      </div>
       <div className="flex justify-center items-center w-full h-full m-10">
         <SecondGalery />
       </div>

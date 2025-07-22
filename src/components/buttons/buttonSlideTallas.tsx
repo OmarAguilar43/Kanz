@@ -22,7 +22,11 @@ export function ButtonSlideTallas () {
                     transition={{ duration: 0.2, ease: easeOut }}
                     className="origin-top"
                   >
-                    Yes! You can purchase a license that you can share with your entire team.
+                    <ul className="list-none pl-5">
+                      <li>GRANDE</li>
+                      <li>MEDIANA</li>
+                      <li>CHICA</li>
+                    </ul>
                   </motion.div>
                 </DisclosurePanel>
               )}
