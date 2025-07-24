@@ -27,7 +27,7 @@ export default function SplashPage() {
             alt="Dalloway Logo"
             height={550}
             width={550}
-            className="h-50/100 lg:h-70/100 bg-green-500lolo"
+            className="max-[425px]:h-40/100 h-50/100 lg:h-70/100 w-auto bg-green-500lolo"
           />
         <div className="flex flex-row gap-x-5 justify-center items-center w-55/100 max-xl:w-70/100 max-sm:w-90/100 mt-5 bg-green-500lolo">
           <button style={{ fontFamily: "Panchang-Medium" }} onClick={handleClickProduct} className="w-50/100 p-2 2xl:text-xl xl:text-lg lg:text-base md:text-sm text-xs hover:bg-slate-900 border-1 border-white cursor-pointer transition delay-50 duration-300 ease-in-out bg-green-500lolo">
