@@ -53,7 +53,7 @@ export default function SecondGalery() {
               : "h-full w-105/100!  min-[375px]:w-90/100! min-[425px]:w-77/100! md:w-55/100! lg:w-42/100! xl:w-33/100! 2xl:w-28/100!"
             }
           >
-            <Image src={src} alt={`Imagen ${idx + 1}`} fill />
+            <Image src={src} alt={`Imagen ${idx + 1}`} fill unoptimized={true}  />
           </SwiperSlide>
         ))}
       </Swiper>
