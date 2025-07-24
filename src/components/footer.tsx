@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -11,10 +12,23 @@ export const Footer = () => {
 
       <div className="flex justify-between h-75/100 gap-x-5">
         <a href="https://www.instagram.com/kanz2wear?igsh=ZjZhdThhdjdkN3Fs" className="h-full">
-          <img src="/logos/instagram-logo.svg" alt="Instagram Logo" className="h-full" />
+          <Image 
+          src="/logos/instagram-logo.svg" 
+          alt="Instagram Logo" 
+          className="h-full" 
+          width={40}
+          height={40}
+          />
         </a>
         <a href="https://www.tiktok.com/@kanz_2_wear1?_t=ZS-8yFZD5aOO8Y&_r=1" className="h-full">
-          <img src="/logos/tiktok-logo.svg" alt="TikTok Logo" className="h-full" />
+          <Image 
+          src="/logos/tiktok-logo.svg" 
+          alt="TikTok Logo" 
+          className="h-full" 
+          width={40}
+          height={40}
+          />
+          
         </a>
       </div>
     </div>

@@ -3,7 +3,7 @@
 import { Navbar } from "@/src/components/Navbar";
 import { useRouter } from "next/navigation";
 
-export default function productPage() {
+export default function ProductPage() {
   const router = useRouter();
 
   const handleClick = () => {

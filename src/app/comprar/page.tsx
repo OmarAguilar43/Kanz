@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import EmblaCarousel from "@/src/components/newGalery/EmblaCarousel";
 import SecondGalery from "@/src/components/galeriaSecundaria/secondGalery";
 import { Footer } from "@/src/components/footer";
+import OrdenarButons from "@/src/components/buttons/orderButton";
 
 export default function ProductPage() {
   const slides = [
@@ -59,13 +60,7 @@ export default function ProductPage() {
 
               {/* {boton} */}
 
-              <button
-                style={{ fontFamily: "Panchang-Medium" }}
-                className="my-5 
-        hover:bg-slate-900 text-white py-4 w-full rounded border-3 border-white cursor-pointer transition delay-50 duration-300 ease-in-out"
-              >
-                Ordenar
-              </button>
+             <OrdenarButons/>
 
               {/* {second buttons} */}
 
