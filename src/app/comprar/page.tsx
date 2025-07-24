@@ -88,7 +88,10 @@ export default function ProductPage() {
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col items-center gap-y-5">
+      <div className="flex justify-center items-center w-full h-full m-10">
+        <SecondGalery />
+      </div>
+      <div className="w-full flex flex-col items-center gap-y-5 mb-40">
         <p className="w-70/100 font-bold text-wrap md:text-center text-justify">
           Omar mide 170 cm y usa una talla L/G y Victoria mide 165 cm y usa una
           talla S/CH.
@@ -97,9 +100,6 @@ export default function ProductPage() {
           El primer modelo de Kanz es orgullosamente diseñado y confeccionado en
           México.
         </p>
-      </div>
-      <div className="flex justify-center items-center w-full h-full m-10">
-        <SecondGalery />
       </div>
       <Footer />
     </div>
