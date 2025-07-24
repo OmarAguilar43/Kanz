@@ -9,21 +9,21 @@ import { useState } from "react"
 
 export default function SecondGalery() {
   const images = [
-    "/2Carrusel/2do-carrusel-foto-1.jpg",
-    "/2Carrusel/2do-carrusel-foto-2.jpg",
-    "/2Carrusel/2do-carrusel-foto-3.jpg",
-    "/2Carrusel/2do-carrusel-foto-4.jpg",
-    "/2Carrusel/2do-carrusel-foto-5.jpg",
-    "/2Carrusel/2do-carrusel-foto-6.jpg",
-    "/2Carrusel/2do-carrusel-foto-7.jpg",
-    "/2Carrusel/2do-carrusel-foto-8.jpg",
-    "/2Carrusel/2do-carrusel-foto-9.jpg",
-    "/2Carrusel/2do-carrusel-foto-10.jpg",
-    "/2Carrusel/2do-carrusel-foto-11.jpg",
-    "/2Carrusel/2do-carrusel-foto-12.jpg",
-    "/2Carrusel/2do-carrusel-foto-13.jpg",
-    "/2Carrusel/2do-carrusel-foto-14.jpg",
-    "/2Carrusel/2do-carrusel-foto-15.jpg",
+    "/2Carrusel/2do-carrusel-foto-1.webp",
+    "/2Carrusel/2do-carrusel-foto-2.webp",
+    "/2Carrusel/2do-carrusel-foto-3.webp",
+    "/2Carrusel/2do-carrusel-foto-4.webp",
+    "/2Carrusel/2do-carrusel-foto-5.webp",
+    "/2Carrusel/2do-carrusel-foto-6.webp",
+    "/2Carrusel/2do-carrusel-foto-7.webp",
+    "/2Carrusel/2do-carrusel-foto-8.webp",
+    "/2Carrusel/2do-carrusel-foto-9.webp",
+    "/2Carrusel/2do-carrusel-foto-10.webp",
+    "/2Carrusel/2do-carrusel-foto-11.webp",
+    "/2Carrusel/2do-carrusel-foto-12.webp",
+    "/2Carrusel/2do-carrusel-foto-13.webp",
+    "/2Carrusel/2do-carrusel-foto-14.webp",
+    "/2Carrusel/2do-carrusel-foto-15.webp",
   ]
 
   const [loadedImages, setLoadedImages] = useState<{ [key: number]: boolean }>({})
