@@ -14,21 +14,21 @@ import Image from "next/image";
 
 export default function SecondGalery() {
   const images = [
-    "/2Carrusel/2do Carrusel foto 1.jpg",
-    "/2Carrusel/2do Carrusel foto 2.jpg",
-    "/2Carrusel/2do Carrusel foto 3.jpg",
-    "/2Carrusel/2do Carrusel foto 4.jpg",
-    "/2Carrusel/2do Carrusel foto 5.jpg",
-    "/2Carrusel/2do Carrusel foto 6.jpg",
-    "/2Carrusel/2do Carrusel foto 7.jpg",
-    "/2Carrusel/2do Carrusel foto 8.jpg",
-    "/2Carrusel/2do Carrusel foto 9.jpg",
-    "/2Carrusel/2do Carrusel foto 10.jpg",
-    "/2Carrusel/2do Carrusel foto 11.jpg",
-    "/2Carrusel/2do Carrusel foto 12.jpg",
-    "/2Carrusel/2do Carrusel foto 13.jpg",
-    "/2Carrusel/2do Carrusel foto 14.jpg",
-    "/2Carrusel/2do Carrusel foto 15.jpg",
+    "/2Carrusel/2do-carrusel-foto-1.jpg",
+    "/2Carrusel/2do-carrusel-foto-2.jpg",
+    "/2Carrusel/2do-carrusel-foto-3.jpg",
+    "/2Carrusel/2do-carrusel-foto-4.jpg",
+    "/2Carrusel/2do-carrusel-foto-5.jpg",
+    "/2Carrusel/2do-carrusel-foto-6.jpg",
+    "/2Carrusel/2do-carrusel-foto-7.jpg",
+    "/2Carrusel/2do-carrusel-foto-8.jpg",
+    "/2Carrusel/2do-carrusel-foto-9.jpg",
+    "/2Carrusel/2do-carrusel-foto-10.jpg",
+    "/2Carrusel/2do-carrusel-foto-11.jpg",
+    "/2Carrusel/2do-carrusel-foto-12.jpg",
+    "/2Carrusel/2do-carrusel-foto-13.jpg",
+    "/2Carrusel/2do-carrusel-foto-14.jpg",
+    "/2Carrusel/2do-carrusel-foto-15.jpg",
   ];
 
   return (
