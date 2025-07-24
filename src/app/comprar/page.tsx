@@ -64,12 +64,7 @@ export default function ProductPage() {
 
               {/* {second buttons} */}
 
-              <div className="grid grid-cols-2 gap-4 ">
-                {/* <button style={{ fontFamily: 'Panchang-Bold' }} 
-                  className="border-2 py-2 text-xs hover:bg-slate-900">DETALLES</button>
-
-          <button style={{ fontFamily: 'Panchang-Bold' }}
-                  className="border-2 text-xs hover:bg-slate-900">TALLAS</button> */}
+              <div className=" ">
 
                 <ButtonSlideTallas />
 

@@ -60,10 +60,11 @@ export default function SecondGalery() {
               alt={`Imagen ${idx + 1}`}
               fill
               className={`object-cover transition-opacity duration-700 ${
-                loadedImages[idx] ? 'opacity-100' : 'opacity-0'
-              }`}
+    loadedImages[idx] ? 'opacity-100 blur-0' : 'opacity-0 blur-md'
+  }`}
               onLoadingComplete={() => handleLoad(idx)}
               unoptimized
+              priority={idx < 10}
             />
           </div>
         </SwiperSlide>
