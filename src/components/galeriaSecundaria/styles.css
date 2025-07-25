@@ -21,11 +21,6 @@ body {
   /* border: 3px solid red; */
 }
 
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-}
-
 /* .swiper-slide:nth-child(2n) {
   width: 100%;
 }
